@@ -15,6 +15,7 @@ nav{
 }
 #menu{
     display: inline-flex;
+	list-style-type: none;
 }
 #menu li{
     margin-left: 10px;
