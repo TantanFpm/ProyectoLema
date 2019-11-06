@@ -1,12 +1,12 @@
 *{
     padding: 0;
-    margin: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 body{
 	font-family: arial;
 	
 }
-
 
 header{
     background-color: gold;
@@ -37,7 +37,8 @@ nav{
     background-color: indigo;
     color: white;
     border-radius: 5px;
-    margin: 10px;
+	margin: 10px;
+	padding: 3px;
 	
 }
 li a, .juegos {
@@ -56,12 +57,13 @@ li.desplegable {
 .contenido-desplegable {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  background-color: transparent;
 }
-
+.contenido-desplegable li{/*Antes se han configurado los li mediante un id, por lo que tendrá preferencia ante una configuracion mediante una clase, de ahi el !important*/
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 100%;
+}
 .contenido-desplegable a {
   color: black;
   text-decoration: none;
@@ -136,4 +138,13 @@ footer{
 	padding: 1em;
 }
 
+.fotos-juegos-de-mesa{
+	width: 30%;
+	margin: 5px;
+}
 
+.seccion-descripcion-juegos-de-mesa{
+	display: flex;
+	flex-direction: column;
+
+}

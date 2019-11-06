@@ -1,0 +1,59 @@
+body{
+    background-color: #366;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    
+    
+}
+ul{
+    list-style-type: none;
+}
+li{
+    width: 162px;
+}
+.nivel1{
+    display: flex;
+}
+
+.nivel1 > li{
+    margin: 2px;
+}
+a{
+    background-color: #399;
+    color: white;
+    border:  1px solid white;
+    padding: 8px;
+    text-align: center;
+    display: block;
+}
+.nivel2 {
+    padding: 0;
+    display: none;
+    position: relative;
+}
+.nivel1 li:hover>ul {
+    display: block;
+}
+.nivel2 li a:hover{
+    background-color: #6CC ;
+    color: black;
+}
+
+.nivel3{
+    padding: 0;
+    display: none;
+    
+}
+.nivel2 li:hover>.nivel3 {
+    display: block;
+    position: absolute;
+    left: 162px;
+    top: 0px;
+}
+.nivel3 li a:hover{
+    background-color: #6CC ;
+    color: black;
+}
+.nivel2 li{
+    position: relative;
+    top: 0;
+}
