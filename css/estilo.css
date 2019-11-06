@@ -25,7 +25,7 @@ nav{
 	
 }
 #menu li{
-    list-style-type: none;
+	list-style-type: none;
 	position:relative;
 	float:right;
 	margin:0;
@@ -84,6 +84,7 @@ article{
 	font-size: 125%;
 }
 p{
+	/*sangrado primera linea*/
 	text-indent: 40px;
 }
 a{
@@ -100,14 +101,39 @@ a{
 	margin: auto;
 }
 .slideIzquierdo{
-	float: left;
+	position:absolute;
+	top: 50em;
+	left: 0.5em;
+	
+	border:none;
+	display:inline-block;
+	padding:8px 16px;
+	overflow:hidden;
+	text-decoration:none;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap
 }
 .slideDerecho{
-	float: right;
+	position:absolute;
+	top: 50em;
+	right: 0.5em;
+	border:none;
+	display:inline-block;
+	padding:8px 16px;
+	overflow:hidden;
+	text-decoration:none;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap
 }
 .slideIzquierdo:hover , .slideDerecho:hover{
 		color: 	#000 !important;
 		background-color: #ccc !important;
+}
+footer{
+	margin: 1em 0;
+	padding: 1em;
 }
 
 
