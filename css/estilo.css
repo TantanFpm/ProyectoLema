@@ -3,6 +3,7 @@
     margin: 0;
 }
 body{
+	font-family: arial;
 	
 }
 
@@ -81,6 +82,13 @@ article{
 	margin: 1em;
 	text-align: justify;
 	font-size: 125%;
+}
+p{
+	text-indent: 40px;
+}
+a{
+	text-decoration: none;
+	color: black;
 }
 .contenedor-display{
 	display:block;
