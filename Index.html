@@ -12,7 +12,8 @@
 </head>
 <body>
     <header>
-		<h1>A quién le toca</h1>
+		<!--h1 pensando en el SEO-->
+		<h1>Tu tienda de juegos de mesa</h1>
         <img src="imagenes/logo.png" alt="LOGOTIPO" id="logo">
         <nav class="nav">
             <ul id="menu">
@@ -35,13 +36,46 @@
             </ul>
         </nav>
     </header>
-    <div>
-        <article><h1>Quienes somos</h1></article>
+    <section>
+		<!--No lo entiendo bien pero quería meter un slideshow para hacer la pagina más atractiva y dinámica. lo he cogido de w3schools-->
+        <article>
+			<div class="contenedor-display">
+				  <img class="mySlides" src="./imagenes/juego-catan.jpg">
+				  <img class="mySlides" src="./imagenes/juego-parchis.jpg">
+				  <img class="mySlides" src="./imagenes/juego-partyco.jpg">
+				  <img class="mySlides" src="./imagenes/juego-risingsun.png">
+				  <img class="mySlides" src="./imagenes/juego-trivial.jpg">
+
+				  <button class="slideIzquierdo" onclick="plusDivs(-1)">&#10094;</button>
+				  <button class="slideDerecho" onclick="plusDivs(1)">&#10095;</button>
+			</div>
+			<!--De scripts no sé nada, algo he entendido con el w3school pero poco-->
+			<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+				  showDivs(slideIndex += n);
+				}
+
+				function showDivs(n) {
+				  var i;
+				  var x = document.getElementsByClassName("mySlides");
+				  if (n > x.length) {slideIndex = 1}
+				  if (n < 1) {slideIndex = x.length}
+				  for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+				  }
+				  x[slideIndex-1].style.display = "block";  
+				}
+			</script>
+		</article>
         
 		<!--El texto lo he cogido de una web, pero me gusta, si hay tiempo, le doy una vulta, pero para tener una idea-->
         <article>
+			<h2>Quienes somos</h2>
             <p>Somos un grupo de amigos amantes de los juegos de mesa <br><br></p>
-			<p>''Cuando divertirse es (casi) lo único que importa''</p>
+			<p><em><strong>&#8220; Cuando divertirse es (casi) lo único que importa&#8221;</strong></em></p>
 			<p>España, S.XXI. Gracias a Internet, lo conocemos prácticamente todo y cada vez hay menos cosas no virtuales que nos diviertan. 
 			Invertimos mucho tiempo en redes sociales, en hablar con nuestros amigos o familiares o en entretenernos de cualquier manera en el mundo online.</p>
 			<p>Donde antes había un tablero y unos dados, ahora hay un móvil. </p>
@@ -50,7 +84,7 @@
 			<p>Cuando compras un juego no te llevas solo una caja con un tablero, cartas, dados, fichas o figuras. No: te llevas eso + cientos de horas de pasarlo 
 			en grande con tus rivales, compitiendo por ver quién se lleva la victoria final.</p>
         </article>
-    </div>
+    </section>
     <footer>
 			<hr>
             <a href="">Contacta con nosotros</a>

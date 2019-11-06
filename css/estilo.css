@@ -2,8 +2,14 @@
     padding: 0;
     margin: 0;
 }
+body{
+	
+}
+
+
 header{
     background-color: gold;
+	padding: 2em;
 }
 #logo{
     width: 20%;
@@ -67,4 +73,33 @@ li.desplegable {
 .desplegable:hover .contenido-desplegable {
   display: block;
 }
+
+section{
+	padding: 3em;
+}
+article{
+	margin: 1em;
+	text-align: justify;
+	font-size: 125%;
+}
+.contenedor-display{
+	display:block;
+}
+.mySlides {
+	
+	height: 20em;
+	width:	50%;
+	margin: auto;
+}
+.slideIzquierdo{
+	float: left;
+}
+.slideDerecho{
+	float: right;
+}
+.slideIzquierdo:hover , .slideDerecho:hover{
+		color: 	#000 !important;
+		background-color: #ccc !important;
+}
+
 
