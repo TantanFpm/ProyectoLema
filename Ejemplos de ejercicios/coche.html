@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <span id="capaArrancar">
+        <button id="arrancar" onclick="arrancar()">Arrancar</button>
+    </span>
+    <span id="capaControles" style="display: none;">
+        <button id="parar" onclick="parar()">Parar</button>
+        <button id="acelerar" onclick="acelerar()">Acelerar</button>
+        <button id="decelerar" onclick="decelerar()">Decelerar</button>
+    </span>
+    <span id="capaCoche">
+        <img id="coche" src="imagenes/coche.jpg" alt="coche" width="200px">
+    </span>
+    
+</body>
+<script>
+    let intervalo = setInterval("comprobarVelocidad()", 1);
+    window.onload = function(){
+        var capa = document.getElementById("capaCoche")
+        capa.style="position:absolute; left:10px; top:130px;";
+        localStorage.setItem("velocidadIntervalo", "null")
+    }
+    
+    function arrancar(){
+        localStorage.setItem("velocidadIntervalo", 100)
+        var velocidad = localStorage.getItem("velocidadIntervalo")
+
+        var capaArrancar = document.getElementById("capaArrancar");
+        capaArrancar.style.display="none";
+
+        var capaControles = document.getElementById("capaControles");
+        capaControles.style.display="inline";
+      
+    }
+    function parar(){
+
+        localStorage.setItem("velocidadIntervalo", "null")
+
+        var capaArrancar = document.getElementById("capaArrancar");
+        capaArrancar.style.display="inline";
+
+        var capaControles = document.getElementById("capaControles");
+        capaControles.style.display="none";
+    }
+
+    function acelerar(){
+        var velocidad = localStorage.getItem("velocidadIntervalo")
+        velocidad = parseInt(velocidad)-100;
+        localStorage.setItem("velocidadIntervalo", velocidad)        
+    }
+
+    function decelerar(){
+        var velocidad = localStorage.getItem("velocidadIntervalo")
+        velocidad = parseInt(velocidad)+100;
+        localStorage.setItem("velocidadIntervalo", velocidad)        
+    }
+
+    function comprobarVelocidad(){
+        var velocidad = localStorage.getItem("velocidadIntervalo")
+        console.log(velocidad);
+        if(velocidad==="null"){
+            console.log("LA VELOCIDAD ES NULL")
+            clearInterval(intervalo);
+        }else{
+            console.log(intervalo+", velocidad:"+velocidad)
+            clearInterval(intervalo);
+            var intervalo=setInterval('mover()', velocidad);
+        }
+
+    }
+
+    function mover(){
+        var capa = document.getElementById("capaCoche")
+        var campoLeft = capa.style.left;
+        var distancia = campoLeft.substring(0, campoLeft.length-2)
+
+        x = parseInt(distancia);
+        x += 1;
+        capa.style="position:absolute; left:"+x+"px; top:130px;";
+    }
+</script>
+</html>
