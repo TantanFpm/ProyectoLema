@@ -35,12 +35,37 @@
             </ul>
         </nav>
     </header>
-    <div>
+    <section>
        
-        <article>
-            <p></p>
-        </article>
-    </div>
+       <form action="formulario.php" method="post">
+			<fieldset>
+				<legend>Contacta con nosotras</legend>
+				<div>
+					<label for="name">Nombre: </label>
+					<input type="text" name="nombre" id="name" placeholder="Introduce tu nombre">
+					<label for="surname">Primer apellido: </label>
+					<input type="text" name="apellido1" id="surname" placeholder="Introduce tu primer apellido">
+					<label for="surname2">Segundo apellido: </label>
+					<input type="text" name="apellido2" id="surname2" placeholder="Introduce tu segundo apellido"><br>
+					<label for="email">
+						Email:
+					</label>	
+					<input type="email" id="email" name="email" placeholder="Introduce tu email"><br>
+					<label for="hombre">Hombre</label>
+					<input type="radio" id="hombre" name="genero">
+					<label for="mujer">Mujer</label>
+					<input type="radio" id="mujer" name="genero"><br>
+					<label for="edad">Fecha de nacimiento:</label>
+					<input type="date" id="edad" name="edad">
+				</div>
+				<div>
+				</div>
+				
+			</fieldset>
+			<input type="reset" name="Resetear" value="Resetear">
+			<input type="submit" value="Enviar">
+		</form>
+    </section>
     <footer>
 			<hr>
            <h6>&copy; Ibai García y Tania Fatoorehchi</h6>
