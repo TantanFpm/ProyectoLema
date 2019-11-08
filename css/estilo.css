@@ -148,3 +148,9 @@ footer{
 	flex-direction: column;
 
 }
+form{
+	margin: 0 15em;
+}
+fieldset{
+	padding: 0.5em;
+}
