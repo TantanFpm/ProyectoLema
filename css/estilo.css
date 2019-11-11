@@ -25,7 +25,7 @@ h1{
 nav{
     float: right;
     margin: 0;
-	position: fixed;
+
 	display: block;
 	background-color:indigo;
 	width:100%
