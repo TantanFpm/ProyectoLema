@@ -14,19 +14,21 @@ header{
 }
 #logo{
     width: 15%;
+
 }
 h1{
 	text-align: right;
 	padding: 4em 0.5em 0 30em;
     position: absolute;
+
 }
 nav{
     float: right;
     margin: 0;
+
 	display: block;
 	background-color:indigo;
-	width: 100%;
-	height: 60px;
+	width:100%
 }
 #menu{
     display: inline-flex;
@@ -45,7 +47,7 @@ nav{
 	color: white;
     margin: 10px;
 	padding: 3px;
-	height: 10%;
+	
 	
 }
 li a, .juegos {
@@ -54,7 +56,7 @@ li a, .juegos {
 }
 
 li a:hover, #desplegable:hover .juegos {
-  /*font-size: 1.5em;*/
+  font-size: 1.5em;
   font-weight: bold;
 }
 
@@ -69,8 +71,6 @@ li#desplegable {
   display: none;
   position: absolute;
   background-color: indigo;
-  top: 60px;
-  left: 0;
 }
 .contenido-desplegable li{/*Antes se han configurado los li mediante un id, por lo que tendrá preferencia ante una configuracion mediante una clase, de ahi el !important*/
 	margin: 0 !important;
@@ -82,7 +82,7 @@ li#desplegable {
   text-decoration: none;
   display: block;
   text-align: left;
-  height: 100%;
+  
 }
 
 #desplegable:hover .contenido-desplegable {
@@ -161,33 +161,8 @@ footer{
 
 }
 form{
-	margin: 30px 15em;
+	margin: 0 15em;
 }
 fieldset{
-	padding: 5px;
-}
-
-.div_formulario{
-	padding: 5px;
-}
-
-.div_formulario p{
-	padding: 5px;
-}
-.div_formulario p label{
-	font-weight: bold;
-}
-
-.fotos_redes{
-	width: 30px;
-	float: right;
-}
-
-.boton_form{
-	background-color: indigo;
-	border: none;
-  	color: white;
-  	padding: 1em 1em;
-  	text-align: center;
-  	text-decoration: none;
+	padding: 0.5em;
 }
