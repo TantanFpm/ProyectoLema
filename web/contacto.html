@@ -30,7 +30,7 @@
 					</ul>
 				</li><!--Los tipos se hace con el hover-->
                 <li><a href="./campeonatos.html">CAMPEONATOS</a></li>
-                <li><a href="./noticias.html">NOTICIAS</a></li>
+                <li><a href="https://aquienletocainform.wixsite.com/misitio" target="_blank">BLOG</a></li>
                 <li class="active"><a href="#">CONTACTO</a></li>
             </ul>
         </nav>
@@ -40,23 +40,23 @@
 		<form action="formulario.php" method="post">
 			<fieldset>
 				<legend>Contacta con nosotras</legend>
-				<div>
-					<label for="name">Nombre: </label>
-					<input type="text" name="nombre" id="name" placeholder="Introduce tu nombre">
-					<label for="surname">Primer apellido: </label>
-					<input type="text" name="apellido1" id="surname" placeholder="Introduce tu primer apellido">
-					<label for="surname2">Segundo apellido: </label>
-					<input type="text" name="apellido2" id="surname2" placeholder="Introduce tu segundo apellido"><br>
-					<label for="email">
-						Email:
-					</label>	
-					<input type="email" id="email" name="email" placeholder="Introduce tu email"><br>
-					<label for="hombre">Hombre</label>
+				<div class="div_formulario">
+					<p><label for="name">Nombre: </label>
+					<input type="text" name="nombre" id="name" placeholder="Introduce tu nombre"></p>
+					<p><label for="surname">Primer apellido: </label>
+					<input type="text" name="apellido1" id="surname" placeholder="Introduce tu primer apellido"></p>
+					<p><label for="surname2">Segundo apellido: </label>
+					<input type="text" name="apellido2" id="surname2" placeholder="Introduce tu segundo apellido"></p>
+					<p><label for="email">Email:</label>	
+					<input type="email" id="email" name="email" placeholder="Introduce tu email"></p>
+					<p><label for="hombre">Hombre</label>
 					<input type="radio" id="hombre" name="genero">
 					<label for="mujer">Mujer</label>
-					<input type="radio" id="mujer" name="genero"><br>
-					<label for="edad">Fecha de nacimiento:</label>
-					<input type="date" id="edad" name="edad">
+					<input type="radio" id="mujer" name="genero">
+					<label for="mujer">Otro</label>
+					<input type="radio" value="otro" name="genero"></p>
+					<p><label for="edad">Fecha de nacimiento:</label>
+					<input type="date" id="edad" name="edad"></p>
 				</div>
 				<div>
 				</div>
@@ -65,14 +65,15 @@
 					<textarea id="comentario" name="comentario" cols="60" rows="10" placeholder="Escribe el texto..."></textarea>
 				</div>
 			</fieldset>
-			<input type="reset" name="Resetear" value="Resetear">
-			<input type="submit" value="Enviar">
+			<input type="reset" name="Resetear" value="Resetear" class="boton_form">
+			<input type="submit" value="Enviar" class="boton_form">
 		</form>
 	
     </section>
     <footer>
-        <hr>
-		<h6>&copy; Ibai García y Tania Fatoorehchi</h6>   
-    </footer>
+		<hr>
+		<a href="./web/contacto.html">Contacta con nosotros</a>
+		<h6>&copy; ¿A quién le toca?</h6>
+</footer>
 </body>
 </html>
