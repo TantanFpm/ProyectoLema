@@ -164,7 +164,10 @@ fieldset{
 	padding: 0.5em;
 }
 iframe{
-	float : right;
+	position : fixed;
+	right : 3%;
+	top : 39.5%;
+	/*float : right;*/
 	width : 15em;
 	height : 20em;
 	padding : 0.5em;
@@ -172,6 +175,8 @@ iframe{
 }
 
 footer{
+	/*El clear both sirve para que no se ponga el calendario por debajo del footer*/
+	clear : both;
 	margin: 1em 0;
 	padding: 1em;
 }
