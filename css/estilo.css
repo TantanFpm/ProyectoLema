@@ -18,7 +18,7 @@ header{
 }
 h1{
 	text-align: right;
-	padding: 4em 0.5em 0 30em;
+	padding: 4em 0.5em 0 24em;
     position: absolute;
 
 }
@@ -90,6 +90,7 @@ li#desplegable {
 }
 
 section{
+	margin: 0.5em;
 	padding: 3em;
 }
 article{
