@@ -145,10 +145,7 @@ a{
 		color: 	#000 !important;
 		background-color: #ccc !important;
 }
-footer{
-	margin: 1em 0;
-	padding: 1em;
-}
+
 
 .fotos-juegos-de-mesa{
 	width: 30%;
@@ -165,4 +162,15 @@ form{
 }
 fieldset{
 	padding: 0.5em;
+}
+iframe{
+	float : right;
+	width : 15em;
+	height : 20em;
+	padding : 0.5em;
+	margin : 0 auto;
+}
+footer{
+	margin: 1em 0;
+	padding: 1em;
 }
