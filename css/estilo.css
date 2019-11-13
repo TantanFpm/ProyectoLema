@@ -10,6 +10,7 @@ body{
 
 header{
     background-color: gold;
+	background-image: url:("../imagenes/dado.jpg")
 	clear : both;
 }
 #logo{
