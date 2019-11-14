@@ -136,7 +136,8 @@ a{
 	width:50% ;
 }
 .mySlides {
-	
+	border:black 10px solid;
+	border-radius : 2em;
 	height: auto;
 	width:	100%;
 	margin: auto;
@@ -197,10 +198,10 @@ iframe{
 	right : 3%;
 	top : 39.5%;
 	float : right;
-	width : 15em;
-	height : 23em;
-	padding : 0.5em;
-	margin : 0.5em auto;
+	width : 15%;
+	height : 60%;
+	padding : 0.5%;
+	margin : 0.5% auto;
 }
 
 footer{
