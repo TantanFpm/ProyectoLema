@@ -19,27 +19,24 @@ body{
 }
 
 header{
-    
-	position: absolute;
+    height:25%;
+	background-image: url(../imagenes/portada.jpg);
+	
 	clear : both;
 }
-#fantasia{
-	position:relative;
-}
+
 #logo{
     width: 15%;
 
 }
-/*#cabecera{
-	height:
-}*/
+
 h1{
 	text-align: right;
 	padding: 4em 0.5em 0 24em;
     position: absolute;
-	color: black;
+	color: gold;
 	font-family: Dungeon;
-	font-size:120%;
+	font-size:200%;
 }
 nav{
     float: right;
@@ -119,7 +116,9 @@ article{
 	margin: 1em;
 	text-align: justify;
 	font-size: 125%;
-	
+	background-color: gold;
+	padding: 1em;
+	border-radius: 2.5px 5px;
 }
 p{
 	/*sangrado primera linea*/
