@@ -10,7 +10,8 @@ body{
 
 header{
     background-color: gold;
-	
+	background-image: url:("../imagenes/dado.jpg")
+	clear : both;
 }
 #logo{
     width: 15%;
@@ -25,7 +26,7 @@ h1{
 nav{
     float: right;
     margin: 0;
-
+	
 	display: block;
 	background-color:indigo;
 	width:100%
@@ -36,6 +37,7 @@ nav{
 }
 #menu li{
 	list-style-type: none;
+	
 	position:relative;
 	float:right;
 	margin:0;
@@ -85,6 +87,7 @@ li#desplegable {
   
 }
 
+
 #desplegable:hover .contenido-desplegable {
   display: block;
 }
@@ -108,17 +111,21 @@ a{
 }
 .contenedor-display{
 	display:block;
+	margin: 0.5em auto;
+	position:relative;
+	width:50%
 }
 .mySlides {
 	
-	height: 20em;
-	width:	50%;
+	height: auto;
+	width:	100%;
 	margin: auto;
 }
 .slideIzquierdo{
 	position:absolute;
-	top: 50em;
-	left: 0.5em;
+	top: 50%;
+	
+	left: 0;
 	
 	border:none;
 	display:inline-block;
@@ -131,8 +138,9 @@ a{
 }
 .slideDerecho{
 	position:absolute;
-	top: 50em;
-	right: 0.5em;
+	top: 50%;
+	
+	right: 0em;
 	border:none;
 	display:inline-block;
 	padding:8px 16px;
@@ -168,16 +176,21 @@ iframe{
 	position : fixed;
 	right : 3%;
 	top : 39.5%;
-	/*float : right;*/
+	float : right;
 	width : 15em;
-	height : 20em;
+	height : auto;
 	padding : 0.5em;
-	margin : 0 auto;
+	margin : 0.5em auto;
 }
 
 footer{
-	/*El clear both sirve para que no se ponga el calendario por debajo del footer*/
+	/*El clear both sirve para que no afecte el float en este párrafo, así no se mete el aside en el footer*/
 	clear : both;
 	margin: 1em 0;
 	padding: 1em;
+}
+.fotos_redes{
+	width: 1.5em;
+	float: right;
+	margin: 0.1em;
 }

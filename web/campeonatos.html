@@ -36,7 +36,43 @@
         </nav>
     </header>
     <section>
-       
+		<h2>Participa en nuestros campeonatos</h2>
+		<div class="contenedor-display">
+				<a href="./campeonatos/quesitos.html">
+				  <img class="mySlides" src="../img-torneo/escenario-belico.gif" alt="Vicent Valentine observa el campo de batalla">
+				</a>
+				  <img class="mySlides" src="../img-torneo/batalla-muralla.jpg" alt="Guerrero salta desde la muralla china">
+				  <img class="mySlides" src="../img-torneo/parchis-humano.jpg" alt="parchis humano">
+				  <img class="mySlides" src="../img-torneo/goku-vegeta.jpg" alt="Goku contra Vegeta">
+				  <img class="mySlides" src="../img-torneo/party.jpg" alt="Crazy party">
+					<!--si alguien sabe cómo poner los botones cuquis XD que me diga-->
+				  <button class="slideIzquierdo" onclick="plusDivs(-1)">&#10094;</button>
+				  <button class="slideDerecho" onclick="plusDivs(1)">&#10095;</button>
+			</div>
+			<!--De scripts no sé nada, algo he entendido con el w3school pero poco-->
+			<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+				  showDivs(slideIndex += n);
+				}
+
+				function showDivs(n) {
+				  var i;
+				  var x = document.getElementsByClassName("mySlides");
+				  if (n > x.length) {slideIndex = 1}
+				  if (n < 1) {slideIndex = x.length}
+				  for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+				  }
+				  x[slideIndex-1].style.display = "block";  
+				}
+				window.onload = function(){
+					setInterval("plusDivs(1)",5000);
+				}
+			</script>
+		
        <form action="formulario.php" method="post">
 			<fieldset>
 				<legend>Contacta con nosotras</legend>
@@ -51,12 +87,23 @@
 						Email:
 					</label>	
 					<input type="email" id="email" name="email" placeholder="Introduce tu email"><br>
+					<p style="text-indent:0">Género:</p>
 					<label for="hombre">Hombre</label>
 					<input type="radio" id="hombre" name="genero">
 					<label for="mujer">Mujer</label>
 					<input type="radio" id="mujer" name="genero"><br>
 					<label for="edad">Fecha de nacimiento:</label>
 					<input type="date" id="edad" name="edad">
+					
+				</div>
+				<div>
+					<p style="text-indent:0">Nivel de dificultad:</p>
+					<label for="iniciacion">Iniciación</label>
+					<input type="radio" id="iniciacion" name="dificultad">
+					<label for="intermedio">Intermedio</label>
+					<input type="radio" id="intermedio" name="dificultad">
+					<label for="experto">Experto</label>
+					<input type="radio" id="experto" name="dificultad">
 				</div>
 					
 				<div>
@@ -77,7 +124,7 @@
     </section>
 	<aside>
 		<iframe src="https://calendar.google.com/calendar/embed?src=0spqeun0ahbork0hdn77p5pubk%40group.calendar.google.com&ctz=Europe%2FMadrid" 
-		style="border: 0" frameborder="0" scrolling="no"></iframe>
+		style="border: 0"></iframe>
 	</aside>
     <footer>
 			<hr>
