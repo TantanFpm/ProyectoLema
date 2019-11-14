@@ -21,7 +21,8 @@ body{
 header{
     height:25%;
 	background-image: url(../imagenes/portada.jpg);
-	
+	background-repeat: no-repeat;
+	background-size: cover;
 	clear : both;
 }
 
@@ -32,11 +33,11 @@ header{
 
 h1{
 	text-align: right;
-	padding: 4em 0.5em 0 24em;
+	padding: 2em 0.5em 0 15em;
     position: absolute;
 	color: gold;
 	font-family: Dungeon;
-	font-size:200%;
+	font-size: 4em;
 }
 nav{
     float: right;
@@ -140,6 +141,7 @@ a{
 	height: auto;
 	width:	100%;
 	margin: auto;
+	border: black 5px solid;
 }
 .slideIzquierdo{
 	position:absolute;
@@ -197,8 +199,8 @@ iframe{
 	right : 3%;
 	top : 39.5%;
 	float : right;
-	width : 15em;
-	height : 23em;
+	/*width : 15em;*/
+	height : 60%;
 	padding : 0.5em;
 	margin : 0.5em auto;
 }
