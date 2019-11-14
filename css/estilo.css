@@ -147,9 +147,9 @@ a{
 .slideIzquierdo{
 	position:absolute;
 	top: 50%;
-	
 	left: 0;
-	
+	background-color:black;
+	color:white;
 	border:none;
 	display:inline-block;
 	padding:8px 16px;
@@ -162,7 +162,8 @@ a{
 .slideDerecho{
 	position:absolute;
 	top: 50%;
-	
+	background-color:black;
+	color:white;
 	right: 0em;
 	border:none;
 	display:inline-block;
